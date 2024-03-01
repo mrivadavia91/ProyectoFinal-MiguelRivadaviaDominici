@@ -183,6 +183,12 @@ footer{
     main{
         height: auto;
     }
+
+    main adv ul il{
+        display:inline
+        
+
+    }
     main .imagenes{
         margin-left: 20%;
         margin-right: 20%;
