@@ -1,0 +1,50 @@
+.imagenes{
+    margin-top: 50px;
+    margin-left: 350px;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 250px 250px;
+    grid-template-areas: 
+    "anillo arito"
+    "pulsera difusor";
+    grid-gap: 100px;
+
+}
+.arito{
+    background-image: url(../imagen/arito.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.arito:hover{
+    transform: scale(0.9);
+    
+}
+.anillo{
+    background-image: url(../imagen/anillo.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.anillo:hover{
+    transform: scale(0.9);
+
+}
+.pulsera{
+    background-image: url(../imagen/pulsera.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.pulsera:hover{
+    transform: scale(0.9);
+}
+.difusor{
+    background-image: url(../imagen/difusor.webp);
+    background-position: center;
+    background-size: cover;
+}
+.difusor:hover{
+    transform: scale(0.9);
+}
+
