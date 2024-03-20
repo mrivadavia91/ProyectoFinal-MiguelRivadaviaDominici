@@ -1,8 +1,7 @@
 .nosotros{
         
-    span p{
-        text-align: center;
-        text-align:justify;
+    span p{ 
+        @extend .center;
         font-size: 25px;
         margin-top: 50px;
         margin-left: 75px;

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.center, .nosotros span p {
+  text-align: center;
+  text-align: justify;
+}
+
 header {
   background-color: rgba(190, 143, 235, 0.856);
   height: 230px;
@@ -11,16 +16,16 @@ header {
   padding: 60px;
 }
 header span .nombre {
-  color: rgba(24, 2, 44, 0.644);
   text-align: center;
   font-size: 95px;
   justify-content: center;
   text-decoration: solid;
   font-family: cursive;
+  color: rgba(24, 2, 44, 0.644);
 }
 header nav ul li {
-  text-decoration: rgb(224, 90, 224);
   text-align: right;
+  text-decoration: rgb(224, 90, 224);
   display: inline-block;
   text-decoration: solid;
   font-size: 30px;
@@ -95,8 +100,6 @@ main div h1 {
 }
 
 .nosotros span p {
-  text-align: center;
-  text-align: justify;
   font-size: 25px;
   margin-top: 50px;
   margin-left: 75px;
@@ -118,9 +121,16 @@ main div h1 {
   font-size: 50px;
 }
 
+.contacto h1 {
+  margin-bottom: 35px;
+}
+.contacto div p {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: rgb(24, 2, 44);
+}
 .contacto .formulario form {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-size: 30px;
 }
@@ -146,25 +156,36 @@ footer {
     height: 15%;
     padding: 15px;
   }
+  header span .nombre {
+    font-size: 55px;
+  }
+  header span .nombre nav ul li {
+    font-size: 16px;
+  }
   main {
     height: 250vh;
   }
-  main adv ul il {
-    display: inline;
-  }
-  main .imagenes {
-    margin-left: 20%;
-    margin-right: 20%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px 150px 150px;
-    grid-template-areas: "anillo" "arito" "pulsera" "difusor";
-    grid-gap: 10px;
-  }
-  .nosotros span p {
-    color: rgb(63, 17, 100);
-    text-align: justify;
-    font-size: 25px;
-  }
+}
+main .imagenes {
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-areas: "anillo" "arito" "pulsera" "difusor";
+  grid-gap: 10px;
+}
+
+.nosotros span p {
+  color: rgb(63, 17, 100);
+  font-size: 25px;
+}
+
+main .nosotros {
+  height: 550vh;
+}
+
+.contacto div p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

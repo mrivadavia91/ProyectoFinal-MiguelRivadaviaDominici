@@ -1,12 +1,13 @@
 @import'../base/generales';
-@import'../base/variable';
+@import'../variable/variable';
+@import'../variable/extends';
 @import'../base/header';
 @import'../base/main';
-@import'../base/index';
-@import'../base/nosotros';
-@import'../base/productos';
-@import'../base/tienda';
-@import'../base/contacto';
+@import'../page scss/index';
+@import'../page scss/nosotros';
+@import'../page scss/productos';
+@import'../page scss/tienda';
+@import'../page scss/contacto';
 
 
 
