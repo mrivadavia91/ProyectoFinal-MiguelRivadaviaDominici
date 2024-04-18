@@ -10,32 +10,15 @@
 }
 
 header {
-  background-color: rgba(190, 143, 235, 0.856);
-  height: 230px;
-  width: 100%;
-  padding: 60px;
+  background-color: rgba(148, 63, 228, 0.856);
 }
-header span .nombre {
-  text-align: center;
-  font-size: 95px;
-  justify-content: center;
-  text-decoration: solid;
-  font-family: cursive;
-  color: rgba(24, 2, 44, 0.644);
-}
-header nav ul li {
-  text-align: right;
-  text-decoration: rgb(224, 90, 224);
-  display: inline-block;
-  text-decoration: solid;
-  font-size: 30px;
-}
-header .logo {
-  float: left;
+header .navbar {
+  background-color: rgba(148, 63, 228, 0.856);
+  font-size: 20px;
 }
 
 main {
-  height: 800px;
+  height: 1100px;
   width: auto;
   background-color: rgba(81, 0, 156, 0.568);
   background-image: url(../imagen/watercolour-1631433_640-2.jpg);
@@ -43,10 +26,17 @@ main {
   background-size: cover;
 }
 main div h1 {
-  color: rgb(24, 2, 44);
+  color: rgb(10, 1, 19);
   text-align: center;
   font-size: 80px;
   justify-content: center;
+}
+
+span p {
+  text-align: center;
+  justify-content: center;
+  color: rgb(10, 1, 19);
+  font-size: 25px;
 }
 
 .imagenes {
@@ -104,23 +94,45 @@ main div h1 {
   margin-top: 50px;
   margin-left: 75px;
   margin-right: 75px;
-  color: rgb(24, 2, 44);
+  color: rgb(10, 1, 19);
   text-align: solid;
 }
 
+.productos main {
+  height: 100%;
+}
+.productos h1 {
+  text-align: center;
+}
 .productos span {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
+}
+.productos span p {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(10, 1, 19);
 }
 
 .tienda div h1 {
   font-size: 50px;
 }
+.tienda span p {
+  text-align: center;
+  font-size: 25px;
+  color: rgba(24, 2, 44, 0.644);
+}
 
+.contacto main {
+  height: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contacto h1 {
   margin-bottom: 35px;
 }
@@ -128,15 +140,49 @@ main div h1 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 15px;
-  color: rgb(24, 2, 44);
+  color: rgb(10, 1, 19);
 }
-.contacto .formulario form {
-  text-align: center;
-  font-size: 30px;
+.contacto form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  align-items: center;
+  width: 340px;
+  margin: auto;
+}
+.contacto .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contacto label {
+  color: rgba(24, 2, 44, 0.644);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.contacto input, .contacto textarea {
+  padding: 17px, 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: azure;
+  border: 2px solid violet;
+  outline: none;
+}
+.contacto .btn {
+  font-size: 16px;
+  color: violet;
+  border: 0;
+  border-radius: 25px;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+.contacto .btn:hover {
+  background-color: rgb(10, 1, 19);
 }
 
 footer {
-  background-color: rgba(190, 143, 235, 0.856);
+  background-color: rgba(148, 63, 228, 0.856);
   height: 50px;
   width: auto;
   text-align: center;
@@ -152,40 +198,30 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
-  header {
-    height: 15%;
-    padding: 15px;
-  }
-  header span .nombre {
-    font-size: 55px;
-  }
-  header span .nombre nav ul li {
-    font-size: 16px;
-  }
   main {
     height: 100%;
   }
-}
-main .imagenes {
-  margin-left: 20%;
-  margin-right: 20%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-template-areas: "anillo" "arito" "pulsera" "difusor";
-  grid-gap: 10px;
-}
-
-main .nosotros {
-  height: 100%;
-}
-
-.nosotros span p {
-  color: rgb(63, 17, 100);
-  font-size: 25px;
-}
-
-.contacto div p {
-  font-size: 20px;
+  main .imagenes {
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: "anillo" "arito" "pulsera" "difusor";
+    grid-gap: 10px;
+  }
+  main .nosotros {
+    height: 100%;
+  }
+  .nosotros span p {
+    color: rgb(63, 17, 100);
+    font-size: 25px;
+  }
+  .contacto div p {
+    font-size: 20px;
+  }
+  .contacto .form {
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

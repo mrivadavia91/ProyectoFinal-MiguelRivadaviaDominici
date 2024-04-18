@@ -1,34 +1,17 @@
 header{
     background-color: $color-base;
     
-    height: 230px;
-    width: 100%;
-    padding: 60px;
     
-
-    span .nombre{
-        text-align: center;
-        font-size: 95px;
-        justify-content: center;
-        text-decoration: solid;
-        font-family:cursive;
-        color: $color-nombre;
+    
+    .navbar{
+        background-color: $color-base;
+        font-size: 20px;
     }
-    nav ul li{
-        text-align: right;
-        text-decoration: rgb(224, 90, 224);
-        display: inline-block;
-        text-decoration: solid;
-        font-size: 30px;
-        
+
+    
+    
 }
 
 
 
-.logo{
-    float: left;
-    
-    
-    
-}
-}
+

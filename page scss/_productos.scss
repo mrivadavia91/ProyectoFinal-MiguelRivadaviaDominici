@@ -1,6 +1,11 @@
 .productos{
-
+    main{
+        height: 100%;
+    }
     
+    h1{
+        text-align: center;
+    }
     span{
         margin-top: 60px;
         display: flex;
@@ -8,5 +13,10 @@
         align-items: center;
         gap: 30px;
         flex-wrap: wrap;
+    }
+    span p{
+        text-align: center;
+        font-size: 25px;
+        color: $color-texto;
     }
 }
